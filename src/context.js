@@ -24,7 +24,6 @@ const AppProvider = ({ children }) => {
   const { loading, stories, query, page } = state;
   const urlQuery = 'query=' + query + '&page=' + page;
   const urlPage = 'page=' + page;
-  useEffect(() => fetchStories(), []);
   useEffect(() => fetchStories(), [query, page]);
   const fetchStories = async () => {
     dispatch({ type: SET_LOADING });
