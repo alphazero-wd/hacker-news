@@ -8,7 +8,7 @@ const Buttons = () => {
         prev
       </button>
       <p>{page + 1} of 50</p>
-      <button className="decrease" onClick={togglePages} className="increase">
+      <button onClick={togglePages} className="increase">
         next
       </button>
     </div>
